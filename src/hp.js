@@ -57,14 +57,13 @@ form.btnChamar.addEventListener('click', () => {
 
     if (pacientes.length === 0) {
         alert("Não há pacientes para serem chamados")
-       
+       proximoPaciente.innerText = " Nenhum Paciente..."
         return
     }
 
     setTimeout(() => {
         if (pacientes.length === 0) {
             listaPaciente.innerText = "Não há pacientes para serem chamados..."
-            proximoPaciente.innerText = " Nenhum paciente"
             return
         }
     }, 1000)

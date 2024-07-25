@@ -245,4 +245,12 @@ h6 {
     .tela-paciente {
         height: 35vh;
     }
+
+    .suporte-tv {
+        background-color: black;
+        width: 12vw;
+        height: 6vh;
+    }
+    
+    
 }
