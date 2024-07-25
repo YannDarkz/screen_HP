@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+    <div class="container-tv">
+        <h6>tv</h6>
+        <h1>H.G.E</h1>
+        <section class="work_screen">
+            <div class="info_work">
+                <p class="help_info add"><strong class="strong-add">Adicionar: </strong> Adiciona um paciente a fila de
+                    espera.</p>
+                <p class="help_info urg"><strong class="strong-urg">Urgencia: </strong> Adiciona um paciente no inicio
+                    da fila de espera.</p>
+                <p class="help_info chamar"><strong class="strong-chamar">Chamar: </strong> Chama o proximo paciente da
+                    fila</p>
+            </div>
+
+            <form class="form" id="frm">
+                <label for="inNome">Nome do Paciente -</label>
+                <input type="text" name="name" id="inNome" placeholder="Digite..." />
+                <input class="btn-resp btn_add" type="submit" value="adicionar" />
+                <input class="btn-resp btn_urg" type="button" value="urgencia" id="btnUrg" />
+                <input class="btn-resp btn_chamar" type="button" value="chamar" id="btnChamar" />
+            </form>
+        </section>
+        <p class="monitor-func">monitor funcionário</p>
+    </div>
+    <div class="suporte-tv"></div>
+    <div class="base-tv"></div>
+
+
+    <div class="container-tv">
+        <h6>tv</h6>
+        <h1>H.G.E</h1>
+
+        <div class="tela-paciente">
+            <h3>Próximo Paciente:<strong class="proximo-paciente" id="resNome"></strong></h3>
+
+            <h4>Pacientes em Espera:</h3>
+            <h5 id="resLista"></h5>
+        </div>
+        <p class="monitor-func">monitor paciente</p>
+    </div>
+    <div class="suporte-tv"></div>
+    <div class="base-tv"></div>
+
+
+    <script type="module" src="./index.js"></script>
+
+</body>
+
+</html>
